@@ -3,24 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-  --Primary:#fff;
-  --Secondary:#f5f5f5;
-  --Text:#FAFAFA;
-  --Text1:#7D8184;
-  --Secondary2:#DB4444;
-  --buttoncolr:#00FF66;
+  --white:#fff;
+  --f5f5f5:#f5f5f5;
+  --FAFAFA:#FAFAFA;
+  --D8184:#7D8184;
+  --red:#DB4444;
+  --g00FF66:#00FF66;
+  --black: #000;
   --Inter:"Inter", sans-serif;
   --poppins:"Poppins", sans-serif;
 }
 
 
 @theme {
-  --color-Primary:var(--Primary);
-  --color-Secondary:var(--Secondary);
-  --color-Text:var(--Text);
-    --color-Text1:var(--Text1);
-  --color-Secondary2:var(--Secondary2);
-  --color-buttoncolr:var(--buttoncolr);
+  --color-white:var(--white);
+  --color-f5f5f5:var(--f5f5f5);
+  --color-FAFAFA:var(--FAFAFA);
+  --color-D8184:var(--D8184);
+  --color-red:var(--red);
+  --color-g00FF66:var(--g00FF66);
+  --color-black:var(--black);
   --font-Inter:var(--Inter);
   --font-poppins:var(--poppins);
 }

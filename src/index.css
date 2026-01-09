@@ -26,3 +26,17 @@
   --font-Inter:var(--Inter);
   --font-poppins:var(--poppins);
 }
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important ;
+  background: #fff !important ;
+  opacity: .5 !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--red) !important;
+    border: 2px solid #fff;
+    opacity: 1 !important;
+}

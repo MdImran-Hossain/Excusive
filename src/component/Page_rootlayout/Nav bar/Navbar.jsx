@@ -64,7 +64,7 @@ const Navbar = () => {
             </div>
             <div>
               <ul className="flex justify-center items-center gap-12">
-                {navItem.map((nav) => (
+                {navItem?.map((nav) => (
                   <li key={nav.id}>
                     <NavLink
                       to={nav.navlinked}
@@ -114,7 +114,7 @@ const Navbar = () => {
                   </span>
                  
                 </div>
-                 {account && <div className="p-5 mt-1 rounded flex flex-col items-start justify-start bg-[rgba(0,0,0,0.4)] backdrop-blur-[150px] absolute top-full w-56 right-0 gap-[13px] cursor-pointer">
+                 {account && <div className="p-5 mt-1 rounded flex flex-col items-start justify-start bg-[rgba(0,0,0,0.04)] backdrop-blur-[150px] absolute top-full w-56 right-0 gap-[13px] cursor-pointer z-30">
                     <div className="flex justify-center items-center gap-4">
                       <span className="text-white text-2xl">
                         <FaRegUser />

@@ -1,17 +1,33 @@
 import React, { useEffect, useState } from 'react'
 
+
 const Time = () => {
   const [time, setTime] = useState(((30 * 24 + 14) * 60 * 60 + 59 * 60 + 59) * 1000)
 
-  useEffect(() => {
-    if (time <= 0) return
+useEffect(() => {
+  const worker = new Worker(
+    new URL("../countDownWorker.js", import.meta.url),
+    { type: "classic" } 
+  );
 
-    const interval = setInterval(() => {
-      setTime(prev => prev - 1000)
-    }, 1000)
+  worker.onmessage = (e) => {
+  setTime(e.data)
+  };
 
-    return () => clearInterval(interval)
-  }, [time])
+  worker.postMessage(time);
+
+}, []);
+
+
+  // useEffect(() => {
+  //   if (time <= 0) return
+
+  //   const interval = setInterval(() => {
+  //     setTime(prev => prev - 1000)
+  //   }, 1000)
+
+  //   return () => clearInterval(interval)
+  // }, [time])
 
   const formatTime = (milliseconds) => {
     const totalSeconds = Math.floor(milliseconds / 1000)

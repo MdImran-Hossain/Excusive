@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../component/Page_rootlayout/Headder/Header'
 import Navbar from '../../component/Page_rootlayout/Nav bar/Navbar'
 import HomepageHero from '../../component/Home page component/HomepageHero'
+import FlashSales from '../../component/Home page component/FlashSales'
 const Home = () => {
   return (
    <>
@@ -9,6 +10,7 @@ const Home = () => {
     <Header />
     <Navbar />
     <HomepageHero />
+    <FlashSales />
   </div>
    </>
   )

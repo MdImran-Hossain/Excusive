@@ -40,3 +40,7 @@
     border: 2px solid #fff;
     opacity: 1 !important;
 }
+
+.addCart_wraaper:hover .addCart{
+bottom: 0;
+}
